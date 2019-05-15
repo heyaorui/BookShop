@@ -7,14 +7,6 @@ public class User {
 
     private String password;
 
-    public User() {
-    }
-
-    public User(String userName, String password) {
-        this.userName = userName;
-        this.password = password;
-    }
-
     public Integer getId() {
         return id;
     }
@@ -37,5 +29,14 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", userName='" + userName + '\'' +
+                ", password='" + password + '\'' +
+                '}';
     }
 }

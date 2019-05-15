@@ -1,15 +1,15 @@
 package com.hyr.bookshop.service.impl;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import com.hyr.bookshop.dao.entity.User;
 import com.hyr.bookshop.dao.UserMapper;
 import com.hyr.bookshop.service.UserService;
-@Service
-public class UserServiceImpl implements UserService{
 
-    @Autowired
+@Service
+public class UserServiceImpl implements UserService {
+
+    @Resource
     private UserMapper userMapper;
 
     @Override
@@ -38,3 +38,4 @@ public class UserServiceImpl implements UserService{
     }
 
 }
+

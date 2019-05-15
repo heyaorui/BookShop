@@ -35,9 +35,8 @@
       `password` = #{password,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <select id="getUserByCond" resultType="com.hyr.bookshop.dao.entity.User" parameterType="com.hyr.bookshop.dao.entity.User">
-    select *
-    from user
-    where userName=#{userName} and password=#{password}
+  <select id="getUserByCond" resultMap="BaseResultMap">
+    select * from user where userName=#{userName,jdbcType=VARCHAR} and password=#{password,jdbcType=VARCHAR}
   </select>
+
 </mapper>
