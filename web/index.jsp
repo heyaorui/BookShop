@@ -11,6 +11,6 @@
     <title>$Title$</title>
   </head>
   <body>
-  $END$
+  欢迎你，登录成功！
   </body>
 </html>
